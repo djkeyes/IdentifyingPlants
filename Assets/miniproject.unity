@@ -180,6 +180,95 @@ MonoBehaviour:
   detailsTranscript: This plant has anti-flammatory, anti-oxidant, and antifungal
     properties. It can also be used as a preservative.
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
+--- !u!1 &229665354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 229665358}
+  - 193: {fileID: 229665357}
+  - 33: {fileID: 229665356}
+  - 23: {fileID: 229665355}
+  - 114: {fileID: 229665359}
+  m_Layer: 0
+  m_Name: Alder
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &229665355
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
+  m_GameObject: {fileID: 229665354}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  - {fileID: 2100002, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &229665356
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
+  m_GameObject: {fileID: 229665354}
+  m_Mesh: {fileID: 4300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+--- !u!193 &229665357
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
+  m_GameObject: {fileID: 229665354}
+  m_TreeData: {fileID: 11400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+--- !u!4 &229665358
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
+  m_GameObject: {fileID: 229665354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.8547935, y: 0, z: 18.3701134}
+  m_LocalScale: {x: 1, y: .5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &229665359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 229665354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 0
+  plantName: Alder
+  detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
+    The bark of this tree is anti-inflammatory.
+  detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
 --- !u!1 &325308604
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1035,58 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1359897373
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 19.8547935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.3701134
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_TagString
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_Name
+      value: Alder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_RootGameObject: {fileID: 229665354}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1653991517
 GameObject:
   m_ObjectHideFlags: 0
