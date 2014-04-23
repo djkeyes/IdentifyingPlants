@@ -191,6 +191,7 @@ GameObject:
   - 193: {fileID: 229665357}
   - 33: {fileID: 229665356}
   - 23: {fileID: 229665355}
+  - 114: {fileID: 229665360}
   - 114: {fileID: 229665359}
   m_Layer: 0
   m_Name: Alder
@@ -254,6 +255,27 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 229665354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 0
+  plantName: Alder
+  detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
+    The bark of this tree is anti-inflammatory.
+  detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
+--- !u!114 &229665360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1359897373}
   m_GameObject: {fileID: 229665354}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -880,6 +902,148 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &962663622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 962663627}
+  - 193: {fileID: 962663626}
+  - 33: {fileID: 962663625}
+  - 23: {fileID: 962663624}
+  - 114: {fileID: 962663623}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &962663623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  m_GameObject: {fileID: 962663622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+--- !u!23 &962663624
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  m_GameObject: {fileID: 962663622}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &962663625
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  m_GameObject: {fileID: 962663622}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &962663626
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  m_GameObject: {fileID: 962663622}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &962663627
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 977940795}
+  m_GameObject: {fileID: 962663622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: .5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1001 &977940795
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_Name
+      value: Pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: detailsSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 962663622}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1038196540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1195,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204787141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .75, y: .949999988, z: 0}
+  m_LocalPosition: {x: .800000012, y: .949999988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

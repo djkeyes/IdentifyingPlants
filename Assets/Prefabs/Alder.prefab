@@ -11,9 +11,10 @@ GameObject:
   - 193: {fileID: 19300000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Alder
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6173,6 +6174,26 @@ MonoBehaviour:
   optimizedSolidMaterial: {fileID: 2100000}
   optimizedCutoutMaterial: {fileID: 2100002}
   isInPreviewMode: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 0
+  plantName: Alder
+  detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
+    The bark of this tree is anti-inflammatory.
+  detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
 --- !u!193 &19300000
 Tree:
   m_ObjectHideFlags: 1
