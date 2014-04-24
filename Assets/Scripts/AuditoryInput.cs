@@ -4,10 +4,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(AlarmsList))]
+[RequireComponent(typeof(SearchManager))]
 
 public class AuditoryInput : MonoBehaviour {
 
 	private AlarmsList alarmsList;
+	private SearchManager searchManager;
+
 	
 	public Dictionary<PlantClassification.PlantAttribute, KeyCode> searchHotkeys;
 	public Dictionary<PlantClassification.PlantAttribute, KeyCode> alarmHotkeys;
@@ -16,7 +19,7 @@ public class AuditoryInput : MonoBehaviour {
 	void Start () {
 
 		alarmsList = GetComponent<AlarmsList> ();
-		
+		searchManager = GetComponent<SearchManager> ();
 		// hotkeys:
 		// search
 		// 3 - building material
@@ -65,7 +68,12 @@ public class AuditoryInput : MonoBehaviour {
 		// also check to see if the user asked for a search
 		foreach(PlantClassification.PlantAttribute attr in Enum.GetValues(typeof(PlantClassification.PlantAttribute))){
 			if (Input.GetKeyUp(searchHotkeys[attr])) {
-				Debug.Log("perform search for " + attr);
+				if(searchManager.DoingSearch(attr)){
+					searchManager.RemoveSearch(attr);
+				} else if(searchManager.HasAvailableSearches()){
+					searchManager.AddSearch(attr);
+				}
+//				Debug.Log("perform search for " + attr);
 			}
 		}
 
