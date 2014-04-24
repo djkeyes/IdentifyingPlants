@@ -1664,6 +1664,8 @@ GameObject:
   - 114: {fileID: 1653991519}
   - 82: {fileID: 1653991523}
   - 114: {fileID: 1653991524}
+  - 114: {fileID: 1653991525}
+  - 114: {fileID: 1653991526}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged

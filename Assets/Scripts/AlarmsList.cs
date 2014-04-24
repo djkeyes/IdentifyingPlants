@@ -7,10 +7,8 @@ using System;
 public class AlarmsList : MonoBehaviour {
 
 	private DetectInView dv;
-	
-	public Dictionary<PlantClassification.PlantAttribute, bool> alarmSet;
 
-	public Dictionary<PlantClassification.PlantAttribute, KeyCode> hotkeys;
+	public Dictionary<PlantClassification.PlantAttribute, bool> alarmSet;
 
 	// Use this for initialization
 	void Start () {
@@ -24,19 +22,7 @@ public class AlarmsList : MonoBehaviour {
 		// initially the poison alarm is set
 		alarmSet.Add (PlantClassification.PlantAttribute.poison, true);
 
-		
-		// hotkeys:
-		// z - building material
-		// x - firewood
-		// c - food
-		// v - medicine
-		// b - poison
-		hotkeys = new Dictionary<PlantClassification.PlantAttribute, KeyCode>();
-		hotkeys.Add (PlantClassification.PlantAttribute.building, KeyCode.Z);
-		hotkeys.Add (PlantClassification.PlantAttribute.fire, KeyCode.X);
-		hotkeys.Add (PlantClassification.PlantAttribute.food, KeyCode.C);
-		hotkeys.Add (PlantClassification.PlantAttribute.medicine, KeyCode.V);
-		hotkeys.Add (PlantClassification.PlantAttribute.poison, KeyCode.B);
+
 	}
 	
 	// Update is called once per frame
@@ -48,16 +34,6 @@ public class AlarmsList : MonoBehaviour {
 				Debug.Log("found a plant of type " + attr + ", " + attr + " alarm turned off.");
 				// TODO perform plant search from here
 				// any special behavior needed for poison?
-			}
-		}
-
-		// also check for new alarms set
-		// maybe we should put a little graphic icon in the display to show what alarms are set
-		// is there a way to import an Enum? this is lengthy to type out ._.
-		foreach(PlantClassification.PlantAttribute attr in Enum.GetValues(typeof(PlantClassification.PlantAttribute))){
-			if (Input.GetKeyUp(hotkeys[attr])) {
-				alarmSet[attr] = !alarmSet[attr];
-				Debug.Log(attr + " alarm toggled " + (alarmSet[attr]?"on":"off"));
 			}
 		}
 	}
