@@ -12,8 +12,8 @@ public class AuditoryInput : MonoBehaviour {
 	private SearchManager searchManager;
 
 	
-	public Dictionary<PlantClassification.PlantAttribute, KeyCode> searchHotkeys;
-	public Dictionary<PlantClassification.PlantAttribute, KeyCode> alarmHotkeys;
+	public Dictionary<PlantAttribute, KeyCode> searchHotkeys;
+	public Dictionary<PlantAttribute, KeyCode> alarmHotkeys;
 
 	// Use this for initialization
 	void Start () {
@@ -27,24 +27,24 @@ public class AuditoryInput : MonoBehaviour {
 		// 5 - food
 		// 6 - medicine
 		// 7 - poison
-		searchHotkeys = new Dictionary<PlantClassification.PlantAttribute, KeyCode>();
-		searchHotkeys.Add (PlantClassification.PlantAttribute.building, KeyCode.Alpha3);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.fire, KeyCode.Alpha4);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.food, KeyCode.Alpha5);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.medicine, KeyCode.Alpha6);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.poison, KeyCode.Alpha7);
+		searchHotkeys = new Dictionary<PlantAttribute, KeyCode>();
+		searchHotkeys.Add (PlantAttribute.building, KeyCode.Alpha3);
+		searchHotkeys.Add (PlantAttribute.fire, KeyCode.Alpha4);
+		searchHotkeys.Add (PlantAttribute.food, KeyCode.Alpha5);
+		searchHotkeys.Add (PlantAttribute.medicine, KeyCode.Alpha6);
+		searchHotkeys.Add (PlantAttribute.poison, KeyCode.Alpha7);
 		// toggle alarm
 		// z - building material
 		// x - firewood
 		// c - food
 		// v - medicine
 		// b - poison
-		alarmHotkeys = new Dictionary<PlantClassification.PlantAttribute, KeyCode>();
-		alarmHotkeys.Add (PlantClassification.PlantAttribute.building, KeyCode.Z);
-		alarmHotkeys.Add (PlantClassification.PlantAttribute.fire, KeyCode.X);
-		alarmHotkeys.Add (PlantClassification.PlantAttribute.food, KeyCode.C);
-		alarmHotkeys.Add (PlantClassification.PlantAttribute.medicine, KeyCode.V);
-		alarmHotkeys.Add (PlantClassification.PlantAttribute.poison, KeyCode.B);
+		alarmHotkeys = new Dictionary<PlantAttribute, KeyCode>();
+		alarmHotkeys.Add (PlantAttribute.building, KeyCode.Z);
+		alarmHotkeys.Add (PlantAttribute.fire, KeyCode.X);
+		alarmHotkeys.Add (PlantAttribute.food, KeyCode.C);
+		alarmHotkeys.Add (PlantAttribute.medicine, KeyCode.V);
+		alarmHotkeys.Add (PlantAttribute.poison, KeyCode.B);
 	}
 	
 	// Update is called once per frame
@@ -58,7 +58,7 @@ public class AuditoryInput : MonoBehaviour {
 		// check for new alarms set
 		// maybe we should put a little graphic icon in the display to show what alarms are set
 		// is there a way to import an Enum? this is lengthy to type out ._.
-		foreach(PlantClassification.PlantAttribute attr in Enum.GetValues(typeof(PlantClassification.PlantAttribute))){
+		foreach(PlantAttribute attr in Enum.GetValues(typeof(PlantAttribute))){
 			if (Input.GetKeyUp(alarmHotkeys[attr])) {
 				alarmsList.alarmSet[attr] = !alarmsList.alarmSet[attr];
 				Debug.Log(attr + " alarm toggled " + (alarmsList.alarmSet[attr]?"on":"off"));
@@ -66,7 +66,7 @@ public class AuditoryInput : MonoBehaviour {
 		}
 
 		// also check to see if the user asked for a search
-		foreach(PlantClassification.PlantAttribute attr in Enum.GetValues(typeof(PlantClassification.PlantAttribute))){
+		foreach(PlantAttribute attr in Enum.GetValues(typeof(PlantAttribute))){
 			if (Input.GetKeyUp(searchHotkeys[attr])) {
 				if(searchManager.DoingSearch(attr)){
 					searchManager.RemoveSearch(attr);

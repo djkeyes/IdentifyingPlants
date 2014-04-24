@@ -2,9 +2,6 @@
 using System.Collections;
 
 public class PlantClassification : MonoBehaviour {
-	public enum PlantAttribute {
-		medicine, fire, food, building, poison
-	}
 	public bool isMedicine = false;
 	public bool isFire = false;
 	public bool isFood = false;

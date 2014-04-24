@@ -37,7 +37,7 @@ public class DetectInView : MonoBehaviour {
 		return distances;
 	}
 
-	public int NumberOf(PlantClassification.PlantAttribute attribute){
+	public int NumberOf(PlantAttribute attribute){
 		int num = 0;
 		foreach(PlantClassification plant in plants){
 			if(plant.IsAttribute(attribute)){

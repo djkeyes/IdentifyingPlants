@@ -7,7 +7,7 @@ public class SearchInView : MonoBehaviour {
 	private AudioSource audioSource;
 	public GameObject label;
 	private DetectInView dv;
-	private PlantClassification.PlantAttribute searchCritera;
+	private PlantAttribute searchCritera;
 	private int lastAmount;
 	private bool changed;
 	public bool isAvailable;
@@ -74,11 +74,11 @@ public class SearchInView : MonoBehaviour {
 		label.guiText.text = "None";
 	}
 
-	public PlantClassification.PlantAttribute GetCriteria(){
+	public PlantAttribute GetCriteria(){
 		return searchCritera;
 	}
 
-	public void SetCritera(PlantClassification.PlantAttribute criteria){
+	public void SetCritera(PlantAttribute criteria){
 		isAvailable = false;
 		searchCritera = criteria;
 		audioSource.Stop ();

@@ -31,7 +31,7 @@ public class SearchManager : MonoBehaviour
 		return guitarSearch.isAvailable || violinSearch.isAvailable || marimbaSearch.isAvailable;
 	}
 
-	public bool AddSearch(PlantClassification.PlantAttribute criteria){
+	public bool AddSearch(PlantAttribute criteria){
 		if(!DoingSearch(criteria)){
 			SearchInView available = GetAvailableSearch();
 			if(available){
@@ -42,7 +42,7 @@ public class SearchManager : MonoBehaviour
 		return false;
 	}
 
-	public bool RemoveSearch(PlantClassification.PlantAttribute criteria){
+	public bool RemoveSearch(PlantAttribute criteria){
 		SearchInView current = DoingSearch (criteria);
 		if(current){
 			current.Stop();
@@ -63,7 +63,7 @@ public class SearchManager : MonoBehaviour
 		}
 	}
 
-	public SearchInView DoingSearch(PlantClassification.PlantAttribute criteria){
+	public SearchInView DoingSearch(PlantAttribute criteria){
 		if (!guitarSearch.isAvailable && guitarSearch.GetCriteria ().Equals (criteria)) {
 			return guitarSearch;
 		} else if (!violinSearch.isAvailable && violinSearch.GetCriteria ().Equals (criteria)) {

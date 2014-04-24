@@ -43,9 +43,12 @@ public class InputHandler : MonoBehaviour {
 				}
 			} else {
 				if (Input.GetKeyDown (GetModeInput(Mode.details))) {
-					audio.clip = dv.ClosestPlant ().detailsSound;
-					audio.Play ();
-					mode = Mode.details;
+					PlantClassification plant = dv.ClosestPlant ();
+					if(plant){
+						audio.clip = plant.detailsSound;
+						audio.Play ();
+						mode = Mode.details;
+					}
 				} else if(Input.GetKeyDown(GetModeInput(Mode.names))){
 					mode = Mode.names;
 				}
