@@ -13,6 +13,7 @@ public class PlantClassification : MonoBehaviour {
 	public string plantName = "plant";
 	public string detailsTranscript = "This is a plant.";
 	public AudioClip detailsSound = null;
+	public AudioClip nameSound = null;
 
 
 	// Use this for initialization

@@ -52,16 +52,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpSpecMap
+          name: _TranslucencyMap
         second:
-          m_Texture: {fileID: 2800000, guid: 153ff29634c5a214884b94b82fe42203, type: 3}
+          m_Texture: {fileID: 2800000, guid: 7bd1f3e706eadd5409dc5c8fbd0359fa, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TranslucencyMap
+          name: _BumpSpecMap
         second:
-          m_Texture: {fileID: 2800000, guid: 7bd1f3e706eadd5409dc5c8fbd0359fa, type: 3}
+          m_Texture: {fileID: 2800000, guid: 153ff29634c5a214884b94b82fe42203, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -104,16 +104,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpSpecMap
+          name: _TranslucencyMap
         second:
-          m_Texture: {fileID: 2800000, guid: 153ff29634c5a214884b94b82fe42203, type: 3}
+          m_Texture: {fileID: 2800000, guid: 7bd1f3e706eadd5409dc5c8fbd0359fa, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _TranslucencyMap
+          name: _BumpSpecMap
         second:
-          m_Texture: {fileID: 2800000, guid: 7bd1f3e706eadd5409dc5c8fbd0359fa, type: 3}
+          m_Texture: {fileID: 2800000, guid: 153ff29634c5a214884b94b82fe42203, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -6194,6 +6194,7 @@ MonoBehaviour:
   detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
+  nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
 --- !u!193 &19300000
 Tree:
   m_ObjectHideFlags: 1

@@ -74,11 +74,51 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1001 &53350288
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.42541695
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.46967602
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+  m_RootGameObject: {fileID: 1038196540}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &177377937
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 177377942}
@@ -97,8 +137,9 @@ GameObject:
 --- !u!54 &177377938
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 5400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   serializedVersion: 2
   m_Mass: 1
@@ -112,8 +153,9 @@ Rigidbody:
 --- !u!23 &177377939
 Renderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 2300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   m_Enabled: 1
   m_CastShadows: 1
@@ -133,8 +175,9 @@ Renderer:
 --- !u!65 &177377940
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 6500000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -145,15 +188,16 @@ BoxCollider:
 --- !u!33 &177377941
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 3300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &177377942
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.84370804, y: .5, z: 8.46967602}
@@ -163,8 +207,9 @@ Transform:
 --- !u!114 &177377943
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723033128}
   m_GameObject: {fileID: 177377937}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -180,6 +225,7 @@ MonoBehaviour:
   detailsTranscript: This plant has anti-flammatory, anti-oxidant, and antifungal
     properties. It can also be used as a preservative.
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
+  nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
 --- !u!1 &229665354
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +316,7 @@ MonoBehaviour:
   detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
+  nameSound: {fileID: 0}
 --- !u!114 &229665360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,111 +338,7 @@ MonoBehaviour:
   detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
---- !u!1 &325308604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 325308610}
-  - 33: {fileID: 325308609}
-  - 65: {fileID: 325308608}
-  - 23: {fileID: 325308607}
-  - 54: {fileID: 325308606}
-  - 114: {fileID: 325308605}
-  m_Layer: 0
-  m_Name: Plant
-  m_TagString: Plant
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &325308605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMedicine: 0
-  isFire: 0
-  isFood: 0
-  isBuilding: 0
-  isPoison: 0
-  plantName: plant
-  detailsTranscript: This is a plant.
-  detailsSound: {fileID: 0}
---- !u!54 &325308606
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &325308607
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!65 &325308608
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &325308609
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &325308610
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325308604}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.535021544, y: .5, z: 8.46967602}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
+  nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
 --- !u!1 &390959884
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,111 +558,6 @@ Prefab:
   m_RootGameObject: {fileID: 1653991517}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &620104679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 620104685}
-  - 33: {fileID: 620104684}
-  - 65: {fileID: 620104683}
-  - 23: {fileID: 620104682}
-  - 54: {fileID: 620104681}
-  - 114: {fileID: 620104680}
-  m_Layer: 0
-  m_Name: Plant
-  m_TagString: Plant
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &620104680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMedicine: 0
-  isFire: 0
-  isFood: 0
-  isBuilding: 0
-  isPoison: 0
-  plantName: plant
-  detailsTranscript: This is a plant.
-  detailsSound: {fileID: 0}
---- !u!54 &620104681
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &620104682
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!65 &620104683
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &620104684
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &620104685
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 620104679}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.74553561, y: .5, z: 8.46967602}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &657962672
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +618,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 657962672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -500, y: 0, z: -500}
+  m_LocalPosition: {x: -1000, y: 0, z: -1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -840,6 +678,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661061342}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &723033128
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.84370804
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.46967602
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_RootGameObject: {fileID: 177377937}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &832524362
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +820,7 @@ MonoBehaviour:
   detailsTranscript: Pine. This tree is used to make paper products. The leaves can
     be used to make tea.
   detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
 --- !u!23 &962663624
 Renderer:
   m_ObjectHideFlags: 0
@@ -1039,6 +918,10 @@ Prefab:
       propertyPath: detailsSound
       value: 
       objectReference: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+    - target: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: nameSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
   m_RootGameObject: {fileID: 962663622}
@@ -1047,8 +930,8 @@ Prefab:
 --- !u!1 &1038196540
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1038196546}
@@ -1058,7 +941,7 @@ GameObject:
   - 54: {fileID: 1038196542}
   - 114: {fileID: 1038196541}
   m_Layer: 0
-  m_Name: Plant
+  m_Name: SwitchGrass
   m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,8 +950,9 @@ GameObject:
 --- !u!114 &1038196541
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 86bcf63206cf1fa40964b0e05b302f4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1080,14 +964,16 @@ MonoBehaviour:
   isFood: 0
   isBuilding: 0
   isPoison: 0
-  plantName: plant
-  detailsTranscript: This is a plant.
-  detailsSound: {fileID: 0}
+  plantName: SwitchGrass
+  detailsTranscript: Switchgrass. This plant is used in the biofuel industry.
+  detailsSound: {fileID: 8300000, guid: dedd4976289774c4b8941c57f05055e7, type: 3}
+  nameSound: {fileID: 8300000, guid: c47ecb88a0183e643bbd07a49ee01956, type: 3}
 --- !u!54 &1038196542
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 5400000, guid: 86bcf63206cf1fa40964b0e05b302f4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   serializedVersion: 2
   m_Mass: 1
@@ -1101,8 +987,9 @@ Rigidbody:
 --- !u!23 &1038196543
 Renderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 2300000, guid: 86bcf63206cf1fa40964b0e05b302f4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   m_Enabled: 1
   m_CastShadows: 1
@@ -1110,7 +997,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 958ba4d33ca633c40871b1a9b9e80f03, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1122,8 +1009,9 @@ Renderer:
 --- !u!65 &1038196544
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 6500000, guid: 86bcf63206cf1fa40964b0e05b302f4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1134,15 +1022,16 @@ BoxCollider:
 --- !u!33 &1038196545
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 3300000, guid: 86bcf63206cf1fa40964b0e05b302f4e,
+    type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1038196546
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
+  m_PrefabInternal: {fileID: 53350288}
   m_GameObject: {fileID: 1038196540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.42541695, y: .5, z: 8.46967602}
@@ -1264,7 +1153,6 @@ GameObject:
   - 114: {fileID: 1653991520}
   - 114: {fileID: 1653991519}
   - 82: {fileID: 1653991523}
-  - 114: {fileID: 1653991524}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -1443,14 +1331,3 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1653991524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1653991517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff0e7485eb84df945a6f37d9ac7d2e97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
