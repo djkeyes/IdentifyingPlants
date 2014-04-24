@@ -2,31 +2,31 @@
 using System.Collections;
 
 public class InputHandler : MonoBehaviour {
+	public enum Mode {
+		none, names, details
+	}
 	private DetectInView dv;
 	private Hashtable recentNames;
-	private bool namesMode;
+	private Mode mode;
 	public GameObject modeLabel;
-	private string MODE_NONE = "Mode : None";
-	private string MODE_NAMES = "Mode : Names";
-	private string MODE_DETAILS = "Mode : Details";
-
 
 	// Use this for initialization
 	void Start () {
 		dv = (DetectInView) GameObject.FindGameObjectWithTag ("MainCamera").GetComponent ("DetectInView");
 		recentNames = new Hashtable ();
-		namesMode = false;
+		mode = Mode.none;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("2") && namesMode){
-			namesMode = false;
+		if (Input.GetKeyDown (GetModeInput(Mode.details)) && mode.Equals (Mode.details)) {
+			mode = Mode.none;
+			audio.Stop();
+		} else if(Input.GetKeyDown(GetModeInput(Mode.names)) && mode.Equals(Mode.names)){
+			mode = Mode.none;
 			audio.Stop();
 		} else if (!audio.isPlaying) {
-			modeLabel.guiText.text = MODE_NONE;
-			if(namesMode){
-				modeLabel.guiText.text = MODE_NAMES;
+			if(mode.Equals(Mode.names)){
 				PlantClassification[] plants = dv.GetPlants();
 				bool foundNewName = false;
 				for(int i = 0; i < plants.Length; i++){
@@ -42,14 +42,39 @@ public class InputHandler : MonoBehaviour {
 					recentNames.Clear();
 				}
 			} else {
-				if (Input.GetKeyDown ("1")) {
+				if (Input.GetKeyDown (GetModeInput(Mode.details))) {
 					audio.clip = dv.ClosestPlant ().detailsSound;
 					audio.Play ();
-					modeLabel.guiText.text = MODE_DETAILS;
-				} else if(Input.GetKeyDown("2")){
-					namesMode = true;
+					mode = Mode.details;
+				} else if(Input.GetKeyDown(GetModeInput(Mode.names))){
+					mode = Mode.names;
 				}
 			}
+		}
+		modeLabel.guiText.text = GetModeText();
+	}
+
+	private string GetModeInput(Mode mode){
+		switch(mode){
+		case Mode.details:
+			return "1";
+		case Mode.names:
+			return "2";
+		case Mode.none:
+		default:
+			return "";
+		}
+	}
+
+	private string GetModeText(){
+		switch(mode){
+		case Mode.details:
+			return "Mode : details";
+		case Mode.names:
+			return "Mode : names";
+		case Mode.none:
+		default:
+			return "Mode : none";
 		}
 	}
 }
