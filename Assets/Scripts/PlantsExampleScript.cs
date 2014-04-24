@@ -11,6 +11,6 @@ public class PlantsExampleScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		DetectInView dv = (DetectInView) GameObject.FindGameObjectWithTag ("MainCamera").GetComponent ("DetectInView");
-		Debug.Log (dv.NumberOf(PlantClassification.PlantAttribute.medicine));
+//		Debug.Log (dv.NumberOf(PlantClassification.PlantAttribute.medicine));
 	}
 }
