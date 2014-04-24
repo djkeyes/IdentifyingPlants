@@ -19,17 +19,17 @@ public class AuditoryInput : MonoBehaviour {
 		
 		// hotkeys:
 		// search
-		// 1 - building material
-		// 2 - firewood
-		// 3 - food
-		// 4 - medicine
-		// 5 - poison
+		// 3 - building material
+		// 4 - firewood
+		// 5 - food
+		// 6 - medicine
+		// 7 - poison
 		searchHotkeys = new Dictionary<PlantClassification.PlantAttribute, KeyCode>();
-		searchHotkeys.Add (PlantClassification.PlantAttribute.building, KeyCode.Alpha1);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.fire, KeyCode.Alpha2);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.food, KeyCode.Alpha3);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.medicine, KeyCode.Alpha4);
-		searchHotkeys.Add (PlantClassification.PlantAttribute.poison, KeyCode.Alpha5);
+		searchHotkeys.Add (PlantClassification.PlantAttribute.building, KeyCode.Alpha3);
+		searchHotkeys.Add (PlantClassification.PlantAttribute.fire, KeyCode.Alpha4);
+		searchHotkeys.Add (PlantClassification.PlantAttribute.food, KeyCode.Alpha5);
+		searchHotkeys.Add (PlantClassification.PlantAttribute.medicine, KeyCode.Alpha6);
+		searchHotkeys.Add (PlantClassification.PlantAttribute.poison, KeyCode.Alpha7);
 		// toggle alarm
 		// z - building material
 		// x - firewood
