@@ -34,8 +34,8 @@ public class SearchInView : MonoBehaviour {
 			int amount = dv.NumberOf (searchCritera);
 			if(IsChanged(amount) || changed){
 				if(audioSource.isPlaying || changed){
-					audioSource.Stop();	
-					audioSource.volume = dv.GetInverseSumOfDistances(searchCritera);
+					audioSource.Stop();
+					audioSource.volume = dv.ClosestVolume(searchCritera);
 					SetClip(amount);
 				}	
 				audioSource.Play();
