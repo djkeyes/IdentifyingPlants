@@ -8,5 +8,5 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 public enum PoisonLevel{
-	fatal_to_touch, fatal_to_eat, rash_on_touch, none
+	fatal_to_touch, fatal_to_eat, rash_on_touch, weakness_on_ingestion, none
 }
