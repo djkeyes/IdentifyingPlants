@@ -4989,7 +4989,7 @@ MonoBehaviour:
     be used to make tea.
   detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
   nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
-  image: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
 --- !u!193 &19300000
 Tree:
   m_ObjectHideFlags: 1

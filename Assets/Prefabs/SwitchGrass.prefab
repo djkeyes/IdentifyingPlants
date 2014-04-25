@@ -106,7 +106,7 @@ MonoBehaviour:
   detailsTranscript: Switchgrass. This plant is used in the biofuel industry.
   detailsSound: {fileID: 8300000, guid: dedd4976289774c4b8941c57f05055e7, type: 3}
   nameSound: {fileID: 8300000, guid: c47ecb88a0183e643bbd07a49ee01956, type: 3}
-  image: {fileID: 2800000, guid: 999ffef73c0da984daf2588e60746334, type: 3}
+  plantImage: {fileID: 2800000, guid: 999ffef73c0da984daf2588e60746334, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

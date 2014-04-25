@@ -226,7 +226,7 @@ MonoBehaviour:
     plant is poisonous to touch and can cause death in 15 minutes.
   detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
   nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
-  image: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
+  plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
 --- !u!1 &186936521
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
   nameSound: {fileID: 0}
-  image: {fileID: 0}
+  plantImage: {fileID: 0}
 --- !u!114 &229665360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
   nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
-  image: {fileID: 2800000, guid: 2a7d5c5adf37d9f468e850cc0eba2ec3, type: 3}
+  plantImage: {fileID: 2800000, guid: 2a7d5c5adf37d9f468e850cc0eba2ec3, type: 3}
 --- !u!1 &317393200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   detailsTranscript: Switchgrass. This plant is used in the biofuel industry.
   detailsSound: {fileID: 8300000, guid: dedd4976289774c4b8941c57f05055e7, type: 3}
   nameSound: {fileID: 8300000, guid: c47ecb88a0183e643bbd07a49ee01956, type: 3}
-  image: {fileID: 2800000, guid: 999ffef73c0da984daf2588e60746334, type: 3}
+  plantImage: {fileID: 2800000, guid: 999ffef73c0da984daf2588e60746334, type: 3}
 --- !u!54 &1038196542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
     be used to make tea.
   detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
   nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
-  image: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
 --- !u!23 &1597536799
 Renderer:
   m_ObjectHideFlags: 0
@@ -2100,6 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modeLabel: {fileID: 324767334}
+  plantTexture: {fileID: 1994139221}
 --- !u!114 &1653991525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,7 +2269,7 @@ MonoBehaviour:
     properties. It can also be used as a preservative.
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
-  image: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
+  plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
 --- !u!54 &1975795957
 Rigidbody:
   m_ObjectHideFlags: 0
