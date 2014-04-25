@@ -11,6 +11,7 @@ public class PlantClassification : MonoBehaviour {
 	public string detailsTranscript = "This is a plant.";
 	public AudioClip detailsSound = null;
 	public AudioClip nameSound = null;
+	public Texture plantImage = null;
 
 
 	// Use this for initialization

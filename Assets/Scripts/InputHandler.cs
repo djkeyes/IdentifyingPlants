@@ -9,6 +9,8 @@ public class InputHandler : MonoBehaviour {
 	private Hashtable recentNames;
 	private Mode mode;
 	public GameObject modeLabel;
+	public GameObject plantTexture;
+
 
 	// Use this for initialization
 	void Start () {
@@ -28,24 +30,22 @@ public class InputHandler : MonoBehaviour {
 		} else if (!audio.isPlaying) {
 			if(mode.Equals(Mode.names)){
 				PlantClassification[] plants = dv.GetPlants();
-				bool foundNewName = false;
+				plantTexture.guiTexture.texture = null;
 				for(int i = 0; i < plants.Length; i++){
 					if(!recentNames.Contains(plants[i].name)){
-						audio.clip = plants[i].nameSound;
+						audio.clip = plants[i].nameSound;	
+						plantTexture.guiTexture.texture = plants[i].plantImage;
 						audio.Play();
 						recentNames.Add(plants[i].name, plants[i].name);
-						foundNewName = true;
 						break;
 					}
-				}
-				if(!foundNewName){
-					recentNames.Clear();
 				}
 			} else {
 				if (Input.GetKeyDown (GetModeInput(Mode.details))) {
 					PlantClassification plant = dv.ClosestPlant ();
 					if(plant){
 						audio.clip = plant.detailsSound;
+						plantTexture.guiTexture.texture = plant.plantImage;
 						audio.Play ();
 						mode = Mode.details;
 					}
@@ -77,6 +77,8 @@ public class InputHandler : MonoBehaviour {
 			return "Mode : names";
 		case Mode.none:
 		default:
+			recentNames.Clear();
+			plantTexture.guiTexture.texture = null;
 			return "Mode : none";
 		}
 	}

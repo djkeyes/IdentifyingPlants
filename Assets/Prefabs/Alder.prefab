@@ -6195,6 +6195,7 @@ MonoBehaviour:
     The bark of this tree is anti-inflammatory.
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
   nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
+  image: {fileID: 2800000, guid: 2a7d5c5adf37d9f468e850cc0eba2ec3, type: 3}
 --- !u!193 &19300000
 Tree:
   m_ObjectHideFlags: 1

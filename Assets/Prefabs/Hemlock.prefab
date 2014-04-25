@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Sage
+  m_Name: Hemlock
   m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: baf679335ed410542890cde9dca432be, type: 2}
+  - {fileID: 2100000, guid: 051d2725353373046b3d06bffd105066, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -97,17 +97,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMedicine: 1
+  isMedicine: 0
   isFire: 0
   isFood: 0
   isBuilding: 0
-  isPoison: 0
-  plantName: Sage
-  detailsTranscript: This plant has anti-flammatory, anti-oxidant, and antifungal
-    properties. It can also be used as a preservative.
-  detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
-  nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
-  image: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
+  isPoison: 1
+  plantName: Hemlock
+  detailsTranscript: Hemlock. This plant was famously used in Socrates suicide. The
+    plant is poisonous to touch and can cause death in 15 minutes.
+  detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
+  nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
+  image: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
