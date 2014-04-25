@@ -37,12 +37,16 @@ public class SearchManager : MonoBehaviour
 		return numSearches < 3;
 	}
 
-	public void AddSearch(PlantAttribute criteria){
+	public void AddSearch(PlantAttribute criteria, bool isPassive){
 		SearchInView search = GetOnCriteria (criteria);
 		if(search.isAvailable){
-			search.StartSearch();
+			search.StartSearch(isPassive);
 			numSearches++;
 		}
+	}
+
+	public bool IsPassive(PlantAttribute criteria){
+		return GetOnCriteria (criteria).GetPassive();
 	}
 
 	public void RemoveSearch(PlantAttribute criteria){

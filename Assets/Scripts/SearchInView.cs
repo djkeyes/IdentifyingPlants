@@ -12,6 +12,7 @@ public class SearchInView : MonoBehaviour {
 	private int lastAmount;
 	private bool changed;
 	public bool isAvailable;
+	private bool passive;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class SearchInView : MonoBehaviour {
 		isAvailable = true;
 		label.guiText.color = Color.gray;
 		image.guiTexture.texture = null;
+		passive = false;
 	}
 	
 	// Update is called once per frame
@@ -33,11 +35,11 @@ public class SearchInView : MonoBehaviour {
 			}
 			int amount = dv.NumberOf (searchCritera);
 			if(IsChanged(amount) || changed){
-				if(audioSource.isPlaying || changed){
+				if(audioSource.isPlaying){
 					audioSource.Stop();
-					audioSource.volume = dv.ClosestVolume(searchCritera);
-					SetClip(amount);
 				}	
+				audioSource.volume = dv.ClosestVolume(searchCritera);
+				SetClip(amount);
 				audioSource.Play();
 				changed = false;
 			} else {
@@ -65,7 +67,11 @@ public class SearchInView : MonoBehaviour {
 
 	private void SetClip(int amount){
 		if (amount < 1) {
-			audioSource.clip = clips [0];
+			if(passive){
+				audioSource.clip = null;
+			} else {
+				audioSource.clip = clips [0];
+			}
 		} else if (amount < 3) {
 			audioSource.clip = clips [1];
 		} else if (amount < 5) {
@@ -88,11 +94,20 @@ public class SearchInView : MonoBehaviour {
 		return searchCritera;
 	}
 
-	public void StartSearch(){
+	public void StartSearch(bool isPassive){
+		passive = isPassive;
 		isAvailable = false;
 		audioSource.Stop ();
 		lastAmount = 0;
-		label.guiText.color = Color.green;
+		if(passive){
+			label.guiText.color = Color.blue;
+		} else {
+			label.guiText.color = Color.green;
+		}
 		changed = true;
+	}
+
+	public bool GetPassive(){
+		return passive;
 	}
 }

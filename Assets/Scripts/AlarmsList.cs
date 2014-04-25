@@ -31,7 +31,7 @@ public class AlarmsList : MonoBehaviour {
 		foreach(PlantAttribute attr in Enum.GetValues(typeof(PlantAttribute))){
 			if(alarmSet[attr] && dv.NumberOf(attr) > 0){
 				alarmSet[attr] = false;
-				Debug.Log("found a plant of type " + attr + ", " + attr + " alarm turned off.");
+//				Debug.Log("found a plant of type " + attr + ", " + attr + " alarm turned off.");
 				// TODO perform plant search from here
 				// any special behavior needed for poison?
 			}

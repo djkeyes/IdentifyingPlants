@@ -45,6 +45,8 @@ public class AuditoryInput : MonoBehaviour {
 		alarmHotkeys.Add (PlantAttribute.food, KeyCode.C);
 		alarmHotkeys.Add (PlantAttribute.medicine, KeyCode.V);
 		alarmHotkeys.Add (PlantAttribute.poison, KeyCode.B);
+		
+		searchManager.AddSearch(PlantAttribute.poison, true);
 	}
 	
 	// Update is called once per frame
@@ -60,8 +62,16 @@ public class AuditoryInput : MonoBehaviour {
 		// is there a way to import an Enum? this is lengthy to type out ._.
 		foreach(PlantAttribute attr in Enum.GetValues(typeof(PlantAttribute))){
 			if (Input.GetKeyUp(alarmHotkeys[attr])) {
-				alarmsList.alarmSet[attr] = !alarmsList.alarmSet[attr];
-				Debug.Log(attr + " alarm toggled " + (alarmsList.alarmSet[attr]?"on":"off"));
+//				alarmsList.alarmSet[attr] = !alarmsList.alarmSet[attr];
+//				Debug.Log(attr + " alarm toggled " + (alarmsList.alarmSet[attr]?"on":"off"));
+				if(searchManager.DoingSearch(attr)){
+					searchManager.RemoveSearch(attr);
+					if(!searchManager.IsPassive(attr)){
+						searchManager.AddSearch(attr, true);
+					}
+				} else if(searchManager.HasAvailableSearches()){
+					searchManager.AddSearch(attr, true);
+				}
 			}
 		}
 
@@ -70,8 +80,11 @@ public class AuditoryInput : MonoBehaviour {
 			if (Input.GetKeyUp(searchHotkeys[attr])) {
 				if(searchManager.DoingSearch(attr)){
 					searchManager.RemoveSearch(attr);
+					if(searchManager.IsPassive(attr)){
+						searchManager.AddSearch(attr, false);
+					}
 				} else if(searchManager.HasAvailableSearches()){
-					searchManager.AddSearch(attr);
+					searchManager.AddSearch(attr, false);
 				}
 //				Debug.Log("perform search for " + attr);
 			}
