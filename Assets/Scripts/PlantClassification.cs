@@ -12,7 +12,7 @@ public class PlantClassification : MonoBehaviour {
 	public AudioClip detailsSound = null;
 	public AudioClip nameSound = null;
 	public Texture plantImage = null;
-
+	public PoisonLevel poisonLevel = PoisonLevel.none;
 
 	// Use this for initialization
 	void Start () {
@@ -28,11 +28,11 @@ public class PlantClassification : MonoBehaviour {
 		switch(attribute){
 		case PlantAttribute.medicine:
 			return isMedicine;
-		case PlantAttribute.building:
+		case PlantAttribute.building_material:
 			return isBuilding;
 		case PlantAttribute.food:
 			return isFood;
-		case PlantAttribute.fire:
+		case PlantAttribute.firewood:
 			return isFire;
 		case PlantAttribute.poison:
 			return isPoison;

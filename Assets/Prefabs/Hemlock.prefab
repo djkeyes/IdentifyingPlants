@@ -108,6 +108,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
   nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
   plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
+  poisonLevel: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

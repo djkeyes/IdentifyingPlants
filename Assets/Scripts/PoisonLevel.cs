@@ -7,6 +7,6 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public enum PlantAttribute {
-	medicine, firewood, food, building_material, poison
+public enum PoisonLevel{
+	fatal_to_touch, fatal_to_eat, rash_on_touch, none
 }

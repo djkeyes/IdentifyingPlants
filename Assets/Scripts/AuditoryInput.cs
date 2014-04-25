@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,8 +28,8 @@ public class AuditoryInput : MonoBehaviour {
 		// 6 - medicine
 		// 7 - poison
 		searchHotkeys = new Dictionary<PlantAttribute, KeyCode>();
-		searchHotkeys.Add (PlantAttribute.building, KeyCode.Alpha3);
-		searchHotkeys.Add (PlantAttribute.fire, KeyCode.Alpha4);
+		searchHotkeys.Add (PlantAttribute.building_material, KeyCode.Alpha3);
+		searchHotkeys.Add (PlantAttribute.firewood, KeyCode.Alpha4);
 		searchHotkeys.Add (PlantAttribute.food, KeyCode.Alpha5);
 		searchHotkeys.Add (PlantAttribute.medicine, KeyCode.Alpha6);
 		searchHotkeys.Add (PlantAttribute.poison, KeyCode.Alpha7);
@@ -40,8 +40,8 @@ public class AuditoryInput : MonoBehaviour {
 		// v - medicine
 		// b - poison
 		alarmHotkeys = new Dictionary<PlantAttribute, KeyCode>();
-		alarmHotkeys.Add (PlantAttribute.building, KeyCode.Z);
-		alarmHotkeys.Add (PlantAttribute.fire, KeyCode.X);
+		alarmHotkeys.Add (PlantAttribute.building_material, KeyCode.Z);
+		alarmHotkeys.Add (PlantAttribute.firewood, KeyCode.X);
 		alarmHotkeys.Add (PlantAttribute.food, KeyCode.C);
 		alarmHotkeys.Add (PlantAttribute.medicine, KeyCode.V);
 		alarmHotkeys.Add (PlantAttribute.poison, KeyCode.B);

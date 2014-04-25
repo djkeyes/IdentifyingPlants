@@ -15,8 +15,8 @@ public class AlarmsList : MonoBehaviour {
 		dv = (DetectInView) GameObject.FindGameObjectWithTag ("MainCamera").GetComponent ("DetectInView");
 
 		alarmSet = new Dictionary<PlantAttribute, bool>();
-		alarmSet.Add (PlantAttribute.building, false);
-		alarmSet.Add (PlantAttribute.fire, false);
+		alarmSet.Add (PlantAttribute.building_material, false);
+		alarmSet.Add (PlantAttribute.firewood, false);
 		alarmSet.Add (PlantAttribute.food, false);
 		alarmSet.Add (PlantAttribute.medicine, false);
 		// initially the poison alarm is set
