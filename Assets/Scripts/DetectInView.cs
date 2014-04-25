@@ -62,7 +62,6 @@ public class DetectInView : MonoBehaviour {
 	}
 
 	private float SonifyDistanceToVolume(float distance){
-		distance = distance;
 		if (distance >= 1f) {
 			return 1f;
 		} else if(distance < 0.005f){
@@ -71,7 +70,6 @@ public class DetectInView : MonoBehaviour {
 			return distance;
 		}
 	}
-
 	
 	public float PlantVolume(string name){
 		float closestDistance = 0f;
