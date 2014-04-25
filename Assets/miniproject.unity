@@ -114,11 +114,51 @@ Prefab:
   m_RootGameObject: {fileID: 1038196540}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &171268374
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.46967602
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_RootGameObject: {fileID: 783970295}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &177377937
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabParentObject: {fileID: 100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1461112076}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 177377942}
@@ -128,7 +168,7 @@ GameObject:
   - 54: {fileID: 177377938}
   - 114: {fileID: 177377943}
   m_Layer: 0
-  m_Name: Hemlock
+  m_Name: Poison Ivy
   m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,9 +177,9 @@ GameObject:
 --- !u!54 &177377938
 Rigidbody:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+  m_PrefabParentObject: {fileID: 5400000, guid: db384387bbb45fc468dca4929c14402f,
     type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   serializedVersion: 2
   m_Mass: 1
@@ -153,9 +193,9 @@ Rigidbody:
 --- !u!23 &177377939
 Renderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+  m_PrefabParentObject: {fileID: 2300000, guid: db384387bbb45fc468dca4929c14402f,
     type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   m_Enabled: 1
   m_CastShadows: 1
@@ -163,7 +203,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 051d2725353373046b3d06bffd105066, type: 2}
+  - {fileID: 2100000, guid: 2fee69fb33b2a72439d9c8d7c9e00895, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -175,9 +215,9 @@ Renderer:
 --- !u!65 &177377940
 BoxCollider:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+  m_PrefabParentObject: {fileID: 6500000, guid: db384387bbb45fc468dca4929c14402f,
     type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -188,28 +228,28 @@ BoxCollider:
 --- !u!33 &177377941
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+  m_PrefabParentObject: {fileID: 3300000, guid: db384387bbb45fc468dca4929c14402f,
     type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &177377942
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabParentObject: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: .5, z: 8.46967602}
+  m_LocalPosition: {x: -2, y: .5, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &177377943
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+  m_PrefabParentObject: {fileID: 11400000, guid: db384387bbb45fc468dca4929c14402f,
     type: 2}
-  m_PrefabInternal: {fileID: 1909872858}
+  m_PrefabInternal: {fileID: 1461112076}
   m_GameObject: {fileID: 177377937}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -221,13 +261,13 @@ MonoBehaviour:
   isFood: 0
   isBuilding: 0
   isPoison: 1
-  plantName: Hemlock
-  detailsTranscript: Hemlock. This plant was famously used in Socrates suicide. The
-    plant is poisonous to touch and can cause death in 15 minutes.
-  detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
-  nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
-  plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
-  poisonLevel: 0
+  plantName: Poison Ivy.
+  detailsTranscript: Poison ivy. This plant is edible to many animals and birds but
+    causes painful rashes in humans.
+  detailsSound: {fileID: 8300000, guid: 07596dd4da9b8b64aa95abe27de1c728, type: 3}
+  nameSound: {fileID: 8300000, guid: 905343359538efb469df20912d9d44a4, type: 3}
+  plantImage: {fileID: 2800000, guid: 0ea6c4a2735bdf1489f6c4ba40d6aa81, type: 3}
+  poisonLevel: 2
 --- !u!1 &186936521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1124,120 @@ Prefab:
   m_RootGameObject: {fileID: 1597536797}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &783970295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 783970301}
+  - 33: {fileID: 783970300}
+  - 65: {fileID: 783970299}
+  - 23: {fileID: 783970298}
+  - 54: {fileID: 783970297}
+  - 114: {fileID: 783970296}
+  m_Layer: 0
+  m_Name: Hemlock
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &783970296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Hemlock
+  detailsTranscript: Hemlock. This plant was famously used in Socrates suicide. The
+    plant is poisonous to touch and can cause death in 15 minutes.
+  detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
+  nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
+  plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
+  poisonLevel: 0
+--- !u!54 &783970297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &783970298
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 051d2725353373046b3d06bffd105066, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &783970299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &783970300
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &783970301
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 171268374}
+  m_GameObject: {fileID: 783970295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: .5, z: 8.46967602}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &798220135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,6 +1855,46 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 610108848}
+--- !u!1001 &1461112076
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_RootGameObject: {fileID: 177377937}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1462077129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,46 +2336,6 @@ MonoBehaviour:
   guitar: {fileID: 186936521}
   violin: {fileID: 317393200}
   marimba: {fileID: 1399220468}
---- !u!1001 &1909872858
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 8.46967602
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
-  m_RootGameObject: {fileID: 177377937}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1919375107
 GameObject:
   m_ObjectHideFlags: 0

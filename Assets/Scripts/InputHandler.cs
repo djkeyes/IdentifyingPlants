@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class InputHandler : MonoBehaviour {
-	public enum Mode {
+	private enum Mode {
 		none, names, details
 	}
 	private DetectInView dv;
@@ -41,20 +41,26 @@ public class InputHandler : MonoBehaviour {
 					}
 				}
 			} else {
-				if (Input.GetKeyDown (GetModeInput(Mode.details))) {
-					PlantClassification plant = dv.ClosestPlant ();
-					if(plant){
-						audio.clip = plant.detailsSound;
-						plantTexture.guiTexture.texture = plant.plantImage;
-						audio.Play ();
-						mode = Mode.details;
-					}
-				} else if(Input.GetKeyDown(GetModeInput(Mode.names))){
-					mode = Mode.names;
-				}
+				SwitchMode ();
 			}
 		}
 		modeLabel.guiText.text = GetModeText();
+	}
+
+	private void SwitchMode ()
+	{
+		if (Input.GetKeyDown (GetModeInput (Mode.details))) {
+			PlantClassification plant = dv.ClosestPlant ();
+			if (plant) {
+				audio.clip = plant.detailsSound;
+				plantTexture.guiTexture.texture = plant.plantImage;
+				audio.Play ();
+				mode = Mode.details;
+			}
+		}
+		else if (Input.GetKeyDown (GetModeInput (Mode.names))) {
+			mode = Mode.names;
+		}
 	}
 
 	private string GetModeInput(Mode mode){
