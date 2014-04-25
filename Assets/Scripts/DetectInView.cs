@@ -99,6 +99,20 @@ public class DetectInView : MonoBehaviour {
 		return SonifyDistanceToVolume(closestDistance);
 	}
 
+	public PlantClassification ClosestPlant(PlantAttribute attribute){
+		PlantClassification closest = null;
+		float closestDistance = float.MaxValue;
+		for(int i = 0; i < distances.Length;i++){
+			if(plants[i].IsAttribute(attribute)){
+				if(distances[i] < closestDistance){
+					closestDistance = distances[i];
+					closest = plants[i];
+				}
+			}
+		}
+		return closest;
+	}
+
 	public PlantClassification ClosestPlant(){
 		PlantClassification closest = null;
 		float closestDistance = float.MaxValue;

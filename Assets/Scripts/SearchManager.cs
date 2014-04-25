@@ -6,11 +6,15 @@ public class SearchManager : MonoBehaviour
 	public GameObject guitar;
 	public GameObject violin;
 	public GameObject marimba;
-	
+	public GameObject trumpet;
+	public GameObject piano;
+
 	private SearchInView guitarSearch;
 	private SearchInView violinSearch;
 	private SearchInView marimbaSearch;
-
+	private SearchInView trumpetSearch;
+	private SearchInView pianoSearch;
+	private int numSearches;
 
 	// Use this for initialization
 	void Start ()
@@ -18,7 +22,8 @@ public class SearchManager : MonoBehaviour
 		guitarSearch = (SearchInView) guitar.GetComponent ("SearchInView");
 		violinSearch = (SearchInView) violin.GetComponent ("SearchInView");
 		marimbaSearch = (SearchInView) marimba.GetComponent ("SearchInView");
-
+		pianoSearch = (SearchInView) piano.GetComponent ("SearchInView");
+		trumpetSearch = (SearchInView) trumpet.GetComponent ("SearchInView");
 	}
 
 	// Update is called once per frame
@@ -28,51 +33,44 @@ public class SearchManager : MonoBehaviour
 	}
 
 	public bool HasAvailableSearches(){
-		return guitarSearch.isAvailable || violinSearch.isAvailable || marimbaSearch.isAvailable;
+		return numSearches < 3;
 	}
 
-	public bool AddSearch(PlantAttribute criteria){
-		if(!DoingSearch(criteria)){
-			SearchInView available = GetAvailableSearch();
-			if(available){
-				available.SetCritera(criteria);
-				return true;
-			}
+	public void AddSearch(PlantAttribute criteria){
+		SearchInView search = GetOnCriteria (criteria);
+		if(search.isAvailable){
+			search.StartSearch();
+			numSearches++;
 		}
-		return false;
 	}
 
-	public bool RemoveSearch(PlantAttribute criteria){
-		SearchInView current = DoingSearch (criteria);
-		if(current){
-			current.Stop();
-			return true;
+	public void RemoveSearch(PlantAttribute criteria){
+		SearchInView search = GetOnCriteria (criteria);
+		if(!search.isAvailable){
+			search.StopSearch();
+			numSearches--;
 		}
-		return false;
 	}
 
-	private SearchInView GetAvailableSearch(){
-		if(guitarSearch.isAvailable){
+	private SearchInView GetOnCriteria(PlantAttribute criteria){
+		switch(criteria){
+		case PlantAttribute.building_material:
 			return guitarSearch;
-		} else if(marimbaSearch.isAvailable){
+		case PlantAttribute.firewood:
 			return marimbaSearch;
-		} else if(violinSearch.isAvailable){
+		case PlantAttribute.medicine:
+			return pianoSearch;
+		case PlantAttribute.poison:
+			return trumpetSearch;
+		case PlantAttribute.food:
+		default:
 			return violinSearch;
-		} else {
-			return null;
 		}
 	}
 
-	public SearchInView DoingSearch(PlantAttribute criteria){
-		if (!guitarSearch.isAvailable && guitarSearch.GetCriteria ().Equals (criteria)) {
-			return guitarSearch;
-		} else if (!violinSearch.isAvailable && violinSearch.GetCriteria ().Equals (criteria)) {
-			return violinSearch;
-		} else if (!marimbaSearch.isAvailable && marimbaSearch.GetCriteria ().Equals (criteria)) {
-			return marimbaSearch;
-		} else {
-			return null;
-		}
+	public bool DoingSearch(PlantAttribute criteria){
+		SearchInView search = GetOnCriteria (criteria);
+		return !search.isAvailable;
 	}
 }
 

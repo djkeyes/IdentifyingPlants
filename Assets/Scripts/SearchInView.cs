@@ -6,8 +6,9 @@ public class SearchInView : MonoBehaviour {
 	public AudioClip[] clips;
 	private AudioSource audioSource;
 	public GameObject label;
+	public GameObject image;
 	private DetectInView dv;
-	private PlantAttribute searchCritera;
+	public PlantAttribute searchCritera;
 	private int lastAmount;
 	private bool changed;
 	public bool isAvailable;
@@ -17,12 +18,19 @@ public class SearchInView : MonoBehaviour {
 		dv = (DetectInView) GameObject.FindGameObjectWithTag ("MainCamera").GetComponent ("DetectInView");
 		audioSource = gameObject.AddComponent<AudioSource> ();
 		isAvailable = true;
-		label.guiText.text = "None";
+		label.guiText.color = Color.gray;
+		image.guiTexture.texture = null;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (!isAvailable) {
+			PlantClassification closest = dv.ClosestPlant(searchCritera);
+			if(closest){
+				image.guiTexture.texture = closest.plantImage;
+			} else {
+				image.guiTexture.texture = null;
+			}
 			int amount = dv.NumberOf (searchCritera);
 			if(IsChanged(amount) || changed){
 				if(audioSource.isPlaying || changed){
@@ -67,24 +75,24 @@ public class SearchInView : MonoBehaviour {
 		}
 	}
 
-	public void Stop(){
+	public void StopSearch(){
 		isAvailable = true;
 		audioSource.Stop ();
 		lastAmount = 0;
 		changed = true;
-		label.guiText.text = "None";
+		image.guiTexture.texture = null;
+		label.guiText.color = Color.gray;
 	}
 
 	public PlantAttribute GetCriteria(){
 		return searchCritera;
 	}
 
-	public void SetCritera(PlantAttribute criteria){
+	public void StartSearch(){
 		isAvailable = false;
-		searchCritera = criteria;
 		audioSource.Stop ();
 		lastAmount = 0;
-		label.guiText.text = criteria.ToString();
+		label.guiText.color = Color.green;
 		changed = true;
 	}
 }
