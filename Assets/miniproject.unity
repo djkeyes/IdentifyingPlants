@@ -74,6 +74,46 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1001 &8090406
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10.5810823
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -41.3228073
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_RootGameObject: {fileID: 2101738298}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &48465385
 Prefab:
   m_ObjectHideFlags: 0
@@ -152,6 +192,160 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86bcf63206cf1fa40964b0e05b302f4e, type: 2}
   m_RootGameObject: {fileID: 1038196540}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &66069366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 66069372}
+  - 33: {fileID: 66069371}
+  - 65: {fileID: 66069370}
+  - 23: {fileID: 66069369}
+  - 54: {fileID: 66069368}
+  - 114: {fileID: 66069367}
+  m_Layer: 0
+  m_Name: Hemlock
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &66069367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Hemlock
+  detailsTranscript: Hemlock. This plant was famously used in Socrates suicide. The
+    plant is poisonous to touch and can cause death in 15 minutes.
+  detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
+  nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
+  plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
+  poisonLevel: 0
+--- !u!54 &66069368
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &66069369
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 051d2725353373046b3d06bffd105066, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &66069370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &66069371
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &66069372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 1954478701}
+  m_GameObject: {fileID: 66069366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.8964996, y: .5, z: 24.1401081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1001 &126424672
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 26.8470001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -13.1709995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_RootGameObject: {fileID: 699464580}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1001 &171268374
@@ -353,7 +547,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -528,7 +722,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
   nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
   plantImage: {fileID: 2800000, guid: 2a7d5c5adf37d9f468e850cc0eba2ec3, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!1001 &265931831
 Prefab:
   m_ObjectHideFlags: 0
@@ -612,7 +806,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &271962833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -683,6 +877,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &284670108
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -39.7099991
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.38171768
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 1974529914}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &317393200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1406,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &444896836
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 50.3124886
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -31.9870605
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_RootGameObject: {fileID: 1891659320}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &508257674
 Prefab:
   m_ObjectHideFlags: 0
@@ -1392,6 +1666,213 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661061342}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &699464580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 699464586}
+  - 33: {fileID: 699464585}
+  - 65: {fileID: 699464584}
+  - 23: {fileID: 699464583}
+  - 54: {fileID: 699464582}
+  - 114: {fileID: 699464581}
+  m_Layer: 0
+  m_Name: Sage
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699464581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Sage
+  detailsTranscript: This plant has anti-flammatory, anti-oxidant, and antifungal
+    properties. It can also be used as a preservative.
+  detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
+  nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
+  plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
+  poisonLevel: 4
+--- !u!54 &699464582
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &699464583
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: baf679335ed410542890cde9dca432be, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &699464584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &699464585
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &699464586
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 126424672}
+  m_GameObject: {fileID: 699464580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.8470001, y: .5, z: -13.1709995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &701502712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 701502717}
+  - 193: {fileID: 701502716}
+  - 33: {fileID: 701502715}
+  - 23: {fileID: 701502714}
+  - 114: {fileID: 701502713}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &701502713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  m_GameObject: {fileID: 701502712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  poisonLevel: 4
+--- !u!23 &701502714
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  m_GameObject: {fileID: 701502712}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &701502715
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  m_GameObject: {fileID: 701502712}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &701502716
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  m_GameObject: {fileID: 701502712}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &701502717
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 1639424381}
+  m_GameObject: {fileID: 701502712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.8428688, y: 0, z: 3.10590124}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &732301547
 Prefab:
   m_ObjectHideFlags: 0
@@ -1401,7 +1882,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -39.8434219
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1409,7 +1890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 12.4240322
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1430,6 +1911,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
   m_RootGameObject: {fileID: 1597536797}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &753882219
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -27.6706429
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -19.7195244
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_RootGameObject: {fileID: 1766122595}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &783970295
@@ -1589,7 +2110,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &790545946
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1855,7 +2376,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &835502343
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1926,6 +2447,200 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &843401414
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -36.5130615
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.35390329
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 1487835051}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &859187429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 859187435}
+  - 33: {fileID: 859187434}
+  - 65: {fileID: 859187433}
+  - 23: {fileID: 859187432}
+  - 54: {fileID: 859187431}
+  - 114: {fileID: 859187430}
+  m_Layer: 0
+  m_Name: Sage
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &859187430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Sage
+  detailsTranscript: This plant has anti-flammatory, anti-oxidant, and antifungal
+    properties. It can also be used as a preservative.
+  detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
+  nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
+  plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
+  poisonLevel: 4
+--- !u!54 &859187431
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &859187432
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: baf679335ed410542890cde9dca432be, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &859187433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &859187434
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 4b769411caa7db04b8ed801599aaad7b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &859187435
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_PrefabInternal: {fileID: 1618928312}
+  m_GameObject: {fileID: 859187429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -35.6369057, y: .5, z: 10.402051}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1001 &893345873
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -36.5585861
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 1988386822}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &957468683
 Prefab:
   m_ObjectHideFlags: 0
@@ -2088,7 +2803,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: dedd4976289774c4b8941c57f05055e7, type: 3}
   nameSound: {fileID: 8300000, guid: c47ecb88a0183e643bbd07a49ee01956, type: 3}
   plantImage: {fileID: 2800000, guid: 999ffef73c0da984daf2588e60746334, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &1038196542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2159,6 +2874,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1085668355
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -42.5248108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_RootGameObject: {fileID: 1181397029}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1176892787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,6 +2964,120 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610108848}
+--- !u!1 &1181397029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1181397035}
+  - 33: {fileID: 1181397034}
+  - 65: {fileID: 1181397033}
+  - 23: {fileID: 1181397032}
+  - 54: {fileID: 1181397031}
+  - 114: {fileID: 1181397030}
+  m_Layer: 0
+  m_Name: Poison Ivy
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1181397030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Poison Ivy.
+  detailsTranscript: Poison ivy. This plant is edible to many animals and birds but
+    causes painful rashes in humans.
+  detailsSound: {fileID: 8300000, guid: 07596dd4da9b8b64aa95abe27de1c728, type: 3}
+  nameSound: {fileID: 8300000, guid: 905343359538efb469df20912d9d44a4, type: 3}
+  plantImage: {fileID: 2800000, guid: 0ea6c4a2735bdf1489f6c4ba40d6aa81, type: 3}
+  poisonLevel: 2
+--- !u!54 &1181397031
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1181397032
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 2fee69fb33b2a72439d9c8d7c9e00895, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1181397033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1181397034
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1181397035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1085668355}
+  m_GameObject: {fileID: 1181397029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -42.5248108, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1183902844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +3128,99 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 610108848}
+--- !u!1 &1191595540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1191595545}
+  - 193: {fileID: 1191595544}
+  - 33: {fileID: 1191595543}
+  - 23: {fileID: 1191595542}
+  - 114: {fileID: 1191595541}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1191595541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  m_GameObject: {fileID: 1191595540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  poisonLevel: 4
+--- !u!23 &1191595542
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  m_GameObject: {fileID: 1191595540}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &1191595543
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  m_GameObject: {fileID: 1191595540}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &1191595544
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  m_GameObject: {fileID: 1191595540}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &1191595545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 1662676352}
+  m_GameObject: {fileID: 1191595540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1203759028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,6 +3271,86 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1462077131}
+--- !u!1001 &1214438035
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.1617918
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -8.7717514
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_RootGameObject: {fileID: 2070174375}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &1271721056
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -21.008873
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_RootGameObject: {fileID: 2039295278}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1330320246
 Prefab:
   m_ObjectHideFlags: 0
@@ -2634,7 +3676,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &1428454144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2702,6 +3744,120 @@ Transform:
   m_GameObject: {fileID: 1428454142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.56704044, y: 2.00603962, z: .245696068}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1433037244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1433037250}
+  - 33: {fileID: 1433037249}
+  - 65: {fileID: 1433037248}
+  - 23: {fileID: 1433037247}
+  - 54: {fileID: 1433037246}
+  - 114: {fileID: 1433037245}
+  m_Layer: 0
+  m_Name: Hemlock
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1433037245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Hemlock
+  detailsTranscript: Hemlock. This plant was famously used in Socrates suicide. The
+    plant is poisonous to touch and can cause death in 15 minutes.
+  detailsSound: {fileID: 8300000, guid: 03c179edd2c66874a8f40329ccc379bc, type: 3}
+  nameSound: {fileID: 8300000, guid: c07becf287f5ac6448eb7ffcd9b1c316, type: 3}
+  plantImage: {fileID: 2800000, guid: 6a3b32574e02cd6409de462e0d084d4d, type: 3}
+  poisonLevel: 0
+--- !u!54 &1433037246
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1433037247
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 051d2725353373046b3d06bffd105066, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1433037248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1433037249
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1433037250
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_PrefabInternal: {fileID: 1998059730}
+  m_GameObject: {fileID: 1433037244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.6228676, y: .5, z: -34.5237579}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2799,6 +3955,99 @@ Transform:
   - {fileID: 610108848}
   - {fileID: 1919375109}
   - {fileID: 1994139222}
+  m_Father: {fileID: 0}
+--- !u!1 &1487835051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1487835056}
+  - 193: {fileID: 1487835055}
+  - 33: {fileID: 1487835054}
+  - 23: {fileID: 1487835053}
+  - 114: {fileID: 1487835052}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1487835052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  m_GameObject: {fileID: 1487835051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  poisonLevel: 4
+--- !u!23 &1487835053
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  m_GameObject: {fileID: 1487835051}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &1487835054
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  m_GameObject: {fileID: 1487835051}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &1487835055
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  m_GameObject: {fileID: 1487835051}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &1487835056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 843401414}
+  m_GameObject: {fileID: 1487835051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.5130615, y: 0, z: 6.35390329}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1493517776
 GameObject:
@@ -2960,6 +4209,86 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1499591232
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 24.6812401
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.511588097
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_RootGameObject: {fileID: 1884831095}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &1546693763
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.2892704
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -43.7375145
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_RootGameObject: {fileID: 2071876602}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1597536797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,7 +4331,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
   nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
   plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!23 &1597536799
 Renderer:
   m_ObjectHideFlags: 0
@@ -3049,10 +4378,204 @@ Transform:
   m_PrefabInternal: {fileID: 732301547}
   m_GameObject: {fileID: 1597536797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: -39.8434219, y: 0, z: 12.4240322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1618928312
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -35.6369057
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10.402051
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b769411caa7db04b8ed801599aaad7b, type: 2}
+  m_RootGameObject: {fileID: 859187429}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1621924367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1621924373}
+  - 33: {fileID: 1621924372}
+  - 65: {fileID: 1621924371}
+  - 23: {fileID: 1621924370}
+  - 54: {fileID: 1621924369}
+  - 114: {fileID: 1621924368}
+  m_Layer: 0
+  m_Name: Bamboo Shoot
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1621924368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 1
+  plantName: Bamboo shoot.
+  detailsTranscript: ' raw, it becomes safe to eat after being boiled in water. raw,
+    it becomes safe to eat after being boiled in water.'
+  detailsSound: {fileID: 8300000, guid: e73faca85a0553945a3e1d24731339ca, type: 3}
+  nameSound: {fileID: 8300000, guid: 0b96119f334b91f46a4af068187d1ccd, type: 3}
+  plantImage: {fileID: 2800000, guid: 5c2ed8c8997359c48ace55eea91a5cf4, type: 3}
+  poisonLevel: 3
+--- !u!54 &1621924369
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1621924370
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 71b7eaee9cc507b47bf637f794bd6d8a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1621924371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1621924372
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1621924373
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1977789152}
+  m_GameObject: {fileID: 1621924367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .277383327, y: .5, z: -7.0988884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1001 &1639424381
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -38.8428688
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.10590124
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 701502712}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1653991517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +4823,46 @@ MonoBehaviour:
   guitar: {fileID: 186936521}
   violin: {fileID: 317393200}
   marimba: {fileID: 1399220468}
+--- !u!1001 &1662676352
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_RootGameObject: {fileID: 1191595540}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1748889049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,7 +4906,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &1748889051
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3414,6 +4977,120 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1766122595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1766122601}
+  - 33: {fileID: 1766122600}
+  - 65: {fileID: 1766122599}
+  - 23: {fileID: 1766122598}
+  - 54: {fileID: 1766122597}
+  - 114: {fileID: 1766122596}
+  m_Layer: 0
+  m_Name: Bamboo Shoot
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1766122596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 1
+  plantName: Bamboo shoot.
+  detailsTranscript: Bamboo shoot. Although this plant is poisonous when eaten raw,
+    it becomes safe to eat after being boiled in water.
+  detailsSound: {fileID: 8300000, guid: e73faca85a0553945a3e1d24731339ca, type: 3}
+  nameSound: {fileID: 8300000, guid: 0b96119f334b91f46a4af068187d1ccd, type: 3}
+  plantImage: {fileID: 2800000, guid: 5c2ed8c8997359c48ace55eea91a5cf4, type: 3}
+  poisonLevel: 3
+--- !u!54 &1766122597
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1766122598
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 71b7eaee9cc507b47bf637f794bd6d8a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1766122599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1766122600
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1766122601
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 753882219}
+  m_GameObject: {fileID: 1766122595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.6706429, y: .5, z: -19.7195244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &1780632131
 Prefab:
   m_ObjectHideFlags: 0
@@ -3454,6 +5131,234 @@ Prefab:
   m_RootGameObject: {fileID: 271962831}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1884831095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1884831101}
+  - 33: {fileID: 1884831100}
+  - 65: {fileID: 1884831099}
+  - 23: {fileID: 1884831098}
+  - 54: {fileID: 1884831097}
+  - 114: {fileID: 1884831096}
+  m_Layer: 0
+  m_Name: Bamboo Shoot
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1884831096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 1
+  plantName: Bamboo shoot.
+  detailsTranscript: Bamboo shoot. Although this plant is poisonous when eaten raw,
+    it becomes safe to eat after being boiled in water.
+  detailsSound: {fileID: 8300000, guid: e73faca85a0553945a3e1d24731339ca, type: 3}
+  nameSound: {fileID: 8300000, guid: 0b96119f334b91f46a4af068187d1ccd, type: 3}
+  plantImage: {fileID: 2800000, guid: 5c2ed8c8997359c48ace55eea91a5cf4, type: 3}
+  poisonLevel: 3
+--- !u!54 &1884831097
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1884831098
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 71b7eaee9cc507b47bf637f794bd6d8a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1884831099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1884831100
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1884831101
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1499591232}
+  m_GameObject: {fileID: 1884831095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.6812401, y: .5, z: -.511588097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1891659320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1891659326}
+  - 33: {fileID: 1891659325}
+  - 65: {fileID: 1891659324}
+  - 23: {fileID: 1891659323}
+  - 54: {fileID: 1891659322}
+  - 114: {fileID: 1891659321}
+  m_Layer: 0
+  m_Name: Poison Ivy
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1891659321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Poison Ivy.
+  detailsTranscript: Poison ivy. This plant is edible to many animals and birds but
+    causes painful rashes in humans.
+  detailsSound: {fileID: 8300000, guid: 07596dd4da9b8b64aa95abe27de1c728, type: 3}
+  nameSound: {fileID: 8300000, guid: 905343359538efb469df20912d9d44a4, type: 3}
+  plantImage: {fileID: 2800000, guid: 0ea6c4a2735bdf1489f6c4ba40d6aa81, type: 3}
+  poisonLevel: 2
+--- !u!54 &1891659322
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1891659323
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 2fee69fb33b2a72439d9c8d7c9e00895, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1891659324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1891659325
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1891659326
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 444896836}
+  m_GameObject: {fileID: 1891659320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.3124886, y: .5, z: -31.9870605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1919375107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,6 +5409,139 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1462077131}
+--- !u!1001 &1954478701
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -27.8964996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 24.1401081
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_RootGameObject: {fileID: 66069366}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1974529914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1974529919}
+  - 193: {fileID: 1974529918}
+  - 33: {fileID: 1974529917}
+  - 23: {fileID: 1974529916}
+  - 114: {fileID: 1974529915}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974529915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  m_GameObject: {fileID: 1974529914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  poisonLevel: 4
+--- !u!23 &1974529916
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  m_GameObject: {fileID: 1974529914}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &1974529917
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  m_GameObject: {fileID: 1974529914}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &1974529918
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  m_GameObject: {fileID: 1974529914}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &1974529919
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 284670108}
+  m_GameObject: {fileID: 1974529914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -39.7099991, y: 0, z: 9.38171768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1975795955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3547,7 +5585,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &1975795957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3618,6 +5656,144 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1977789152
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .277383327
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.0988884
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+      propertyPath: detailsTranscript
+      value: ' raw, it becomes safe to eat after being boiled in water. raw, it becomes
+        safe to eat after being boiled in water.'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_RootGameObject: {fileID: 1621924367}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1988386822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1988386827}
+  - 193: {fileID: 1988386826}
+  - 33: {fileID: 1988386825}
+  - 23: {fileID: 1988386824}
+  - 114: {fileID: 1988386823}
+  m_Layer: 0
+  m_Name: Pine
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1988386823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  m_GameObject: {fileID: 1988386822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 0
+  plantName: Pine
+  detailsTranscript: Pine. This tree is used to make paper products. The leaves can
+    be used to make tea.
+  detailsSound: {fileID: 8300000, guid: 2b1d5d9de0ff5c54bbbe09a3e957f3b8, type: 3}
+  nameSound: {fileID: 8300000, guid: ba725a7acee608c4e9c0dd1478be5fd8, type: 3}
+  plantImage: {fileID: 2800000, guid: 8366a9cfb95643d409703c6194d23820, type: 3}
+  poisonLevel: 4
+--- !u!23 &1988386824
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  m_GameObject: {fileID: 1988386822}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  - {fileID: 2100002, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &1988386825
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  m_GameObject: {fileID: 1988386822}
+  m_Mesh: {fileID: 4300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!193 &1988386826
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046,
+    type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  m_GameObject: {fileID: 1988386822}
+  m_TreeData: {fileID: 11400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+--- !u!4 &1988386827
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 02eb55cfe4c6dc94ba92c091e8f1f046, type: 2}
+  m_PrefabInternal: {fileID: 893345873}
+  m_GameObject: {fileID: 1988386822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.5585861, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1994139221
 GameObject:
   m_ObjectHideFlags: 0
@@ -3664,6 +5840,481 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1001 &1998059730
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -39.6228676
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -34.5237579
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8d4f2762b5c6e7d45ac75ea58570f25c, type: 2}
+  m_RootGameObject: {fileID: 1433037244}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &2039295278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2039295284}
+  - 33: {fileID: 2039295283}
+  - 65: {fileID: 2039295282}
+  - 23: {fileID: 2039295281}
+  - 54: {fileID: 2039295280}
+  - 114: {fileID: 2039295279}
+  m_Layer: 0
+  m_Name: Poison Ivy
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2039295279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 0
+  isBuilding: 0
+  isPoison: 1
+  plantName: Poison Ivy.
+  detailsTranscript: Poison ivy. This plant is edible to many animals and birds but
+    causes painful rashes in humans.
+  detailsSound: {fileID: 8300000, guid: 07596dd4da9b8b64aa95abe27de1c728, type: 3}
+  nameSound: {fileID: 8300000, guid: 905343359538efb469df20912d9d44a4, type: 3}
+  plantImage: {fileID: 2800000, guid: 0ea6c4a2735bdf1489f6c4ba40d6aa81, type: 3}
+  poisonLevel: 2
+--- !u!54 &2039295280
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &2039295281
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 2fee69fb33b2a72439d9c8d7c9e00895, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &2039295282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2039295283
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: db384387bbb45fc468dca4929c14402f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2039295284
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: db384387bbb45fc468dca4929c14402f, type: 2}
+  m_PrefabInternal: {fileID: 1271721056}
+  m_GameObject: {fileID: 2039295278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.008873, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &2070174375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2070174381}
+  - 33: {fileID: 2070174380}
+  - 65: {fileID: 2070174379}
+  - 23: {fileID: 2070174378}
+  - 54: {fileID: 2070174377}
+  - 114: {fileID: 2070174376}
+  m_Layer: 0
+  m_Name: Bamboo Shoot
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2070174376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 1
+  plantName: Bamboo shoot.
+  detailsTranscript: Bamboo shoot. Although this plant is poisonous when eaten raw,
+    it becomes safe to eat after being boiled in water.
+  detailsSound: {fileID: 8300000, guid: e73faca85a0553945a3e1d24731339ca, type: 3}
+  nameSound: {fileID: 8300000, guid: 0b96119f334b91f46a4af068187d1ccd, type: 3}
+  plantImage: {fileID: 2800000, guid: 5c2ed8c8997359c48ace55eea91a5cf4, type: 3}
+  poisonLevel: 3
+--- !u!54 &2070174377
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &2070174378
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 71b7eaee9cc507b47bf637f794bd6d8a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &2070174379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2070174380
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2070174381
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 1214438035}
+  m_GameObject: {fileID: 2070174375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.1617918, y: .5, z: -8.7717514}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &2071876602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2071876607}
+  - 193: {fileID: 2071876606}
+  - 33: {fileID: 2071876605}
+  - 23: {fileID: 2071876604}
+  - 114: {fileID: 2071876603}
+  m_Layer: 0
+  m_Name: Alder
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2071876603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  m_GameObject: {fileID: 2071876602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 1
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 0
+  plantName: Alder
+  detailsTranscript: Alder. The flowers of this tree are bitter but high in protein.
+    The bark of this tree is anti-inflammatory.
+  detailsSound: {fileID: 8300000, guid: 182b77bcc0ba59f4785de07468de15c0, type: 3}
+  nameSound: {fileID: 8300000, guid: d40fcd7d8a0bfc743ac29afba6d341cd, type: 3}
+  plantImage: {fileID: 2800000, guid: 2a7d5c5adf37d9f468e850cc0eba2ec3, type: 3}
+  poisonLevel: 4
+--- !u!23 &2071876604
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  m_GameObject: {fileID: 2071876602}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  - {fileID: 2100002, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &2071876605
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  m_GameObject: {fileID: 2071876602}
+  m_Mesh: {fileID: 4300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+--- !u!193 &2071876606
+Tree:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19300000, guid: 8f44727812a3ad44da82b5ebda3fbfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  m_GameObject: {fileID: 2071876602}
+  m_TreeData: {fileID: 11400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+--- !u!4 &2071876607
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 8f44727812a3ad44da82b5ebda3fbfd8, type: 2}
+  m_PrefabInternal: {fileID: 1546693763}
+  m_GameObject: {fileID: 2071876602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.2892704, y: 0, z: -43.7375145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &2101738298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2101738304}
+  - 33: {fileID: 2101738303}
+  - 65: {fileID: 2101738302}
+  - 23: {fileID: 2101738301}
+  - 54: {fileID: 2101738300}
+  - 114: {fileID: 2101738299}
+  m_Layer: 0
+  m_Name: Bamboo Shoot
+  m_TagString: Plant
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2101738299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc451418acb1774dad0b75177692a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMedicine: 0
+  isFire: 0
+  isFood: 1
+  isBuilding: 0
+  isPoison: 1
+  plantName: Bamboo shoot.
+  detailsTranscript: Bamboo shoot. Although this plant is poisonous when eaten raw,
+    it becomes safe to eat after being boiled in water.
+  detailsSound: {fileID: 8300000, guid: e73faca85a0553945a3e1d24731339ca, type: 3}
+  nameSound: {fileID: 8300000, guid: 0b96119f334b91f46a4af068187d1ccd, type: 3}
+  plantImage: {fileID: 2800000, guid: 5c2ed8c8997359c48ace55eea91a5cf4, type: 3}
+  poisonLevel: 3
+--- !u!54 &2101738300
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &2101738301
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 71b7eaee9cc507b47bf637f794bd6d8a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &2101738302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2101738303
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1a24b0b0dc5723c429a86348d9496444,
+    type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2101738304
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1a24b0b0dc5723c429a86348d9496444, type: 2}
+  m_PrefabInternal: {fileID: 8090406}
+  m_GameObject: {fileID: 2101738298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.5810823, y: .5, z: -41.3228073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &2147123699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,7 +6358,7 @@ MonoBehaviour:
   detailsSound: {fileID: 8300000, guid: 10e5c1baf436ce140ba335ad2feeb2fd, type: 3}
   nameSound: {fileID: 8300000, guid: a961690fd12cff94d863c738e9474bf6, type: 3}
   plantImage: {fileID: 2800000, guid: 12ccdcd41c46b3b4295d222ea8e09087, type: 3}
-  poisonLevel: 3
+  poisonLevel: 4
 --- !u!54 &2147123701
 Rigidbody:
   m_ObjectHideFlags: 0
