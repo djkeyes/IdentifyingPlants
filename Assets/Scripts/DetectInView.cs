@@ -47,6 +47,60 @@ public class DetectInView : MonoBehaviour {
 		return num;
 	}
 
+	public float GetInverseSumOfDistances(PlantAttribute attribute){
+		float distance = 0f;
+		for(int i = 0; i < plants.Length;i++){
+			if(plants[i].IsAttribute(attribute)){
+				if(distances[i] < 1e-3){
+					distance += 1.0f;
+				} else {
+					distance += 1.0f / distances[i];
+				}
+			}
+		}
+		return SonifyDistanceToVolume (distance);
+	}
+
+	private float SonifyDistanceToVolume(float distance){
+		distance = distance;
+		if (distance >= 1f) {
+			return 1f;
+		} else if(distance < 0.005f){
+			return 0.005f;
+		} else {
+			return distance;
+		}
+	}
+
+	
+	public float PlantVolume(string name){
+		float closestDistance = 0f;
+		for(int i = 0; i < plants.Length;i++){
+			if(plants[i].name.Equals(name)){
+				float distance;
+				if(distances[i] < 1e-3){
+					distance = 1.0f;
+				} else {
+					distance = 1.0f / distances[i];
+				}
+				if(closestDistance < distance){
+					closestDistance = distance;
+				}
+			}
+		}
+		return SonifyDistanceToVolume (closestDistance);
+	}
+
+	public float ClosestVolume(){
+		float closestDistance = float.MinValue;
+		for(int i = 0; i < distances.Length;i++){
+			if(distances[i] < closestDistance){
+				closestDistance = distances[i];
+			}
+		}
+		return SonifyDistanceToVolume(closestDistance);
+	}
+
 	public PlantClassification ClosestPlant(){
 		PlantClassification closest = null;
 		float closestDistance = float.MaxValue;

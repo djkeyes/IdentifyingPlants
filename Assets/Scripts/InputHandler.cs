@@ -35,6 +35,7 @@ public class InputHandler : MonoBehaviour {
 					if(!recentNames.Contains(plants[i].name)){
 						audio.clip = plants[i].nameSound;	
 						plantTexture.guiTexture.texture = plants[i].plantImage;
+						audio.volume = dv.PlantVolume(plants[i].name);
 						audio.Play();
 						recentNames.Add(plants[i].name, plants[i].name);
 						break;
@@ -54,12 +55,14 @@ public class InputHandler : MonoBehaviour {
 			if (plant) {
 				audio.clip = plant.detailsSound;
 				plantTexture.guiTexture.texture = plant.plantImage;
+				audio.volume = dv.ClosestVolume ();
 				audio.Play ();
 				mode = Mode.details;
 			}
-		}
-		else if (Input.GetKeyDown (GetModeInput (Mode.names))) {
+		} else if (Input.GetKeyDown (GetModeInput (Mode.names))) {
 			mode = Mode.names;
+		} else {
+			mode = Mode.none;
 		}
 	}
 
