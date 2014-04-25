@@ -21,7 +21,17 @@ public class InputHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (GetModeInput(Mode.details)) && mode.Equals (Mode.details)) {
+		if(Input.GetKeyDown (GetModeInput(Mode.details)) && mode.Equals (Mode.names)){
+			recentNames.Clear();
+			plantTexture.guiTexture.texture = null;
+			audio.Stop();
+			SwitchModeDetails ();
+		} else if(Input.GetKeyDown (GetModeInput(Mode.names)) && mode.Equals (Mode.details)){
+			recentNames.Clear();
+			plantTexture.guiTexture.texture = null;
+			audio.Stop();
+			mode = Mode.names;
+		} else if (Input.GetKeyDown (GetModeInput(Mode.details)) && mode.Equals (Mode.details)) {
 			mode = Mode.none;
 			audio.Stop();
 		} else if(Input.GetKeyDown(GetModeInput(Mode.names)) && mode.Equals(Mode.names)){
@@ -48,23 +58,30 @@ public class InputHandler : MonoBehaviour {
 		modeLabel.guiText.text = GetModeText();
 	}
 
+	void SwitchModeDetails ()
+	{
+		PlantClassification plant = dv.ClosestPlant ();
+		if (plant) {
+			audio.clip = plant.detailsSound;
+			plantTexture.guiTexture.texture = plant.plantImage;
+			audio.volume = dv.ClosestVolume ();
+			audio.Play ();
+			mode = Mode.details;
+		}
+	}
+
 	private void SwitchMode ()
 	{
 		if (Input.GetKeyDown (GetModeInput (Mode.details))) {
-			PlantClassification plant = dv.ClosestPlant ();
-			if (plant) {
-				audio.clip = plant.detailsSound;
-				plantTexture.guiTexture.texture = plant.plantImage;
-				audio.volume = dv.ClosestVolume ();
-				audio.Play ();
-				mode = Mode.details;
-			}
+			SwitchModeDetails ();
 		} else if (Input.GetKeyDown (GetModeInput (Mode.names))) {
 			mode = Mode.names;
 		} else {
 			mode = Mode.none;
 		}
 	}
+
+
 
 	private string GetModeInput(Mode mode){
 		switch(mode){
