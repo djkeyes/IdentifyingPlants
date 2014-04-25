@@ -3816,7 +3816,7 @@ GUIText:
   m_GameObject: {fileID: 610108846}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Searches
+  m_Text: Searches (0 / 3)
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -10893,6 +10893,7 @@ MonoBehaviour:
   marimba: {fileID: 317393200}
   trumpet: {fileID: 331970359}
   piano: {fileID: 146844692}
+  numSearchesLabel: {fileID: 610108846}
 --- !u!1001 &1662676352
 Prefab:
   m_ObjectHideFlags: 0

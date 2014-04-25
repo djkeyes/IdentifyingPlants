@@ -8,6 +8,7 @@ public class SearchManager : MonoBehaviour
 	public GameObject marimba;
 	public GameObject trumpet;
 	public GameObject piano;
+	public GameObject numSearchesLabel;
 
 	private SearchInView guitarSearch;
 	private SearchInView violinSearch;
@@ -29,7 +30,7 @@ public class SearchManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-
+		numSearchesLabel.guiText.text = "Searches (" + numSearches + " / 3)";
 	}
 
 	public bool HasAvailableSearches(){
