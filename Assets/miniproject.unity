@@ -66328,7 +66328,7 @@ GUIText:
   m_GameObject: {fileID: 1203759028}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Poison Alarm Off
+  m_Text: 
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -90136,6 +90136,7 @@ MonoBehaviour:
   trumpet: {fileID: 331970359}
   piano: {fileID: 146844692}
   numSearchesLabel: {fileID: 610108846}
+  poisonTypeLabel: {fileID: 1203759028}
 --- !u!1 &1654277545
 GameObject:
   m_ObjectHideFlags: 0
